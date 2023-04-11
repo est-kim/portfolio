@@ -1,7 +1,5 @@
 import { Box, Heading, Image, Stack, useMediaQuery, useColorMode } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
-// import TypeWriter from "../typewriter";
-// import ProjectList from "./projects";
 import PastDoings from "../home/past-doings";
 import CurrentDoings from "../home/current-doings";
 
@@ -18,7 +16,7 @@ export default function JourneyHeader() {
 
   return (
     <Stack>
-    <Image
+    {/* <Image
             src={
               colorMode === "dark"
                 ? "/media/journey/journey-night.svg"
@@ -46,7 +44,7 @@ export default function JourneyHeader() {
             height="200px"
             display={isMinWidth ? "none" : "block"}
 
-          />
+          /> */}
 
       <Stack mt={isMinWidth ? 15 : 0}>
         <Box mt={-3} mb={-2}>

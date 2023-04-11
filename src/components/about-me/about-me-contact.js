@@ -25,7 +25,7 @@ export default function AboutMeContact() {
   return (
     <Flex direction="column" display={["block", "block", "block", "block"]}>
       <SimpleGrid columns={[2, 2, 2, 2]} spacing={5} mt={5}>
-        <NextLink href="mailto: xin@xinw.org" passHref>
+        <NextLink href="mailto: estherkimdev@gmail.com" passHref>
           <Button
             as="a"
             target="_blank"
@@ -38,7 +38,7 @@ export default function AboutMeContact() {
             fontWeight="bold"
             border="2px solid transparent"
             _hover={{
-              background: colorMode === "light" ? "red.400" : "red.100",
+              background: "red.100",
               color: colorMode === "light" ? "black" : "black",
               border: "1px solid",
               borderColor: "transparent",
@@ -50,7 +50,7 @@ export default function AboutMeContact() {
           </Button>
         </NextLink>
 
-        <NextLink href="https://www.linkedin.com/in/xin-w" passHref>
+        <NextLink href="https://www.linkedin.com/in/kimesther117/" passHref>
           <Button
             as="a"
             target="_blank"
@@ -63,7 +63,7 @@ export default function AboutMeContact() {
             fontWeight="bold"
             border="2px solid transparent"
             _hover={{
-              background: colorMode === "light" ? "blue.400" : "blue.100",
+              background: "blue.100",
               color: colorMode === "light" ? "black" : "black",
               border: "1px solid",
               borderColor: "transparent",
@@ -75,7 +75,7 @@ export default function AboutMeContact() {
           </Button>
         </NextLink>
 
-        <NextLink href="https://www.github.com/xinwang-git" passHref>
+        <NextLink href="https://www.github.com/est-kim" passHref>
           <Button
             as="a"
             target="_blank"
@@ -88,7 +88,7 @@ export default function AboutMeContact() {
             fontWeight="bold"
             border="2px solid transparent"
             _hover={{
-              background: colorMode === "light" ? "green.400" : "yellow.100",
+              background: "yellow.100",
               color: colorMode === "light" ? "black" : "black",
               border: "1px solid",
               borderColor: "transparent",
@@ -101,8 +101,7 @@ export default function AboutMeContact() {
         </NextLink>
 
         <NextLink
-          // href="https://docs.google.com/document/d/1Bn9X08IqlF0gKhTlndLoVqKNHnDfQH9ue9peZ7Qvalk/edit?usp=sharing"
-          href={"/media/about-me/Xin_Wang_Resume.pdf"}
+          href={"/media/about-me/EstherKimResume.pdf"}
           passHref
         >
           <Button
@@ -117,7 +116,7 @@ export default function AboutMeContact() {
             fontWeight="bold"
             border="2px solid transparent"
             _hover={{
-              background: colorMode === "light" ? "purple.400" : "purple.100",
+              background: "purple.100",
               color: colorMode === "light" ? "black" : "black",
               border: "1px solid",
               borderColor: "transparent",

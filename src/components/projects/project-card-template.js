@@ -15,16 +15,17 @@ import {
   useColorModeValue,
   useMediaQuery,
   VStack,
+  AspectRatio
 } from "@chakra-ui/react";
 import NextLink from "next/link";
 import { useEffect, useState } from "react";
-import { FiGithub } from "react-icons/fi";
+import { IoLogoGitlab } from "react-icons/io5";
 
-function ProjectCardItem({ title, desc, icon, tags, gh_link, ...rest }) {
+function ProjectCardItem({ title, desc, video, icon, tags, gh_link, ...rest }) {
   const { colorMode } = useColorMode();
   const [desktopQuery] = useMediaQuery("(min-width: 700px)");
   const [isMinWidth, setIsMinWidth] = useState(false);
-  const github_border_colors = useColorModeValue("black", "white");
+  const gitlab_border_colors = useColorModeValue("black", "white");
   useEffect(() => {
     if (desktopQuery !== isMinWidth) {
       setIsMinWidth(desktopQuery);
@@ -52,13 +53,13 @@ function ProjectCardItem({ title, desc, icon, tags, gh_link, ...rest }) {
           <HStack>
             <Box mb={3}>
             <HStack>
-                                    <Image
-                                    mt={-1}
-                height="27px"
-                width="27px"
-                layout="fixed"
-                src={icon}
-                alt={title}
+              <Image
+              mt={-1}
+              height="27px"
+              width="27px"
+              layout="fixed"
+              src={icon}
+              alt={title}
               ></Image>
                     <Text my={1} fontWeight="bold" fontSize="2xl">
 
@@ -68,6 +69,7 @@ function ProjectCardItem({ title, desc, icon, tags, gh_link, ...rest }) {
 
             </Box>
             <Spacer></Spacer>
+            {gh_link && (
             <Box>
               <VStack mt={-5}>
                 <NextLink
@@ -83,7 +85,7 @@ function ProjectCardItem({ title, desc, icon, tags, gh_link, ...rest }) {
                     cursor="pointer"
                     // border={"1px solid"}
                     borderRadius={"3px"}
-                    borderColor={github_border_colors}
+                    borderColor={gitlab_border_colors}
                     textTransform={"uppercase"}
                     padding={"0px 5px "}
                     transition={"all .2s ease"}
@@ -94,20 +96,14 @@ function ProjectCardItem({ title, desc, icon, tags, gh_link, ...rest }) {
                     }}
                   >
                     <HStack>
-                      {/* {isMinWidth && (
-                      <Text fontSize={"xs"} textTransform={"uppercase"}>
-                        {"Learn more"}
-                      </Text>
-                    )} */}
-
-                      <Icon as={FiGithub} align={"center"} boxSize={"18px"} />
+                      <Icon as={IoLogoGitlab} align={"center"} boxSize={"18px"} />
                     </HStack>
 
                   </Button>
                 </NextLink>
               </VStack>
             </Box>
-
+          )}
           </HStack>
      <Stack isInline overflow={"hidden"} overflowWrap={false}>
                   <Box mb={4} mt={0}>
@@ -117,10 +113,11 @@ function ProjectCardItem({ title, desc, icon, tags, gh_link, ...rest }) {
                         borderRadius="sm"
                         variant="outline"
                         mr={2}
-                        mt={isMinWidth ? "0" : "3"}
+                        // mt={isMinWidth ? "0" : "3"}
+                        mt="1"
                       >
                         <TagLabel>
-                          <Text color={github_border_colors} fontSize={"sm"}>
+                          <Text color={gitlab_border_colors} fontSize={"sm"}>
                             {tag}
                           </Text>
                         </TagLabel>
@@ -135,7 +132,13 @@ function ProjectCardItem({ title, desc, icon, tags, gh_link, ...rest }) {
                 <Text mt={isMinWidth ? "0" : "1"} fontSize="md">
                   {desc}
                 </Text>
-
+                <AspectRatio maxW="100%" ratio={21/9}>
+                  <iframe
+                    title="YouTube video player"
+                    src={video}
+                    allowFullScreen
+                  />
+                </AspectRatio>
               </Stack>
             </HStack>
           </VStack>
@@ -147,5 +150,9 @@ function ProjectCardItem({ title, desc, icon, tags, gh_link, ...rest }) {
     </LinkBox>
   );
 }
+ProjectCardItem.defaultProps = {
+  gh_link: "",
+  icon: "",
+};
 
 export default ProjectCardItem;

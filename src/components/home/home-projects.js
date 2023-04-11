@@ -2,9 +2,15 @@ import {
   Box,
   Flex,
   Heading,
-  Stack, useMediaQuery
+  Stack,
+  useMediaQuery,
+  ListIcon,
+  ListItem,
+  List
 } from "@chakra-ui/react";
-
+import { IoLogoJavascript, IoLogoPython, IoLogoHtml5, IoLogoCss3, IoLogoReact, IoInfinite } from "react-icons/io5";
+import { SiDjango, SiFastapi, SiRabbitmq, SiPostgresql, SiMongodb, SiDocker, SiBootstrap,
+  SiAmazons3 } from "react-icons/si";
 import { useEffect, useState } from "react";
 import ProjectCardItem from "../projects/project-card-template";
 
@@ -23,7 +29,7 @@ export default function HomeProjects() {
       <Stack>
         <Box my={0}>
           <Heading fontSize="3xl" fontWeight="bold">
-            Recent projects
+            Recent Projects
           </Heading>
         </Box>
 
@@ -33,45 +39,175 @@ export default function HomeProjects() {
           align="center"
         >
           <ProjectCardItem
-            title="ment-to-be"
+            title="face-bark"
             desc={
-              "An application that aims to match computer science students with industry professionals. Our goal for this platform was to provide an open space for students to gain more clarity and guidance towards their future. Students can gain more information about specific fields within the industry such as: front-end, back-end, full stack, machine learning, and more! This is also an open space for any career advice as well as any questions they may have throughout their job/internship recruiting process."
+              "A dog-based social media platform designed to allow users to interact with others as their dog's persona to post and share content, follow others, search for dogs, create events, and attend events with differing functionalities for registered and non-registered users."
             }
-            icon="/media/home/projects-menttobe-icon.png"
-            tags={["React.js", "Express.js", "MongoDB", "ChakraUI"]}
-            gh_link={"https://github.com/xinwng/ment-to-be"}
+            icon="/media/home/projects-facebark-icon.png"
+            tags={[
+              <List>
+                <ListItem>
+                <ListIcon as={IoLogoReact} color="cyan.300" ml={0} mr={1} mb={0.5}/>
+              React.js
+                </ListItem>
+              </List>,
+              <List>
+                <ListItem>
+                <ListIcon as={SiBootstrap} color="purple.600" ml={0} mr={1} mb={0.5}/>
+              Bootstrap
+                </ListItem>
+              </List>,
+              <List>
+                <ListItem>
+                  <ListIcon as={IoLogoJavascript} color="yellow.400" ml={0} mr={1} mb={0.5}/>
+                  JavaScript ES6
+                </ListItem>
+              </List>,
+              <List>
+                <ListItem>
+                  <ListIcon as={IoLogoPython} color="blue.500" ml={0} mr={1} mb={0.5}/>
+                  Python 3
+                </ListItem>
+              </List>,
+              <List>
+                <ListItem>
+                  <ListIcon as={SiFastapi} color="teal.500" ml={0} mr={1} mb={0.5}/>
+                  FastAPI
+                </ListItem>
+              </List>,
+              <List>
+                <ListItem>
+                  <ListIcon as={SiPostgresql} color="blue.600" ml={0} mr={1} mb={0}/>
+                  PostgreSQL
+                </ListItem>
+              </List>,
+              <List>
+                <ListItem>
+                  <ListIcon as={SiAmazons3} color="red.400" ml={0} mr={1} mb={0.5}/>
+                  Amazon S3
+                </ListItem>
+              </List>,
+              <List>
+                <ListItem>
+                  <ListIcon as={IoInfinite} color="blue.700" ml={0} mr={1} mb={0.5}/>
+                  CI/CD
+                </ListItem>
+              </List>,
+              ]}
+            gh_link={"https://gitlab.com/facebark/facebark"}
+            video="https://www.youtube.com/embed/EHFCYvlv-Z4"
           ></ProjectCardItem>
 
           <ProjectCardItem
-            title="Spotability"
+            title="CarTune"
             desc={
-              "Ideated with 3 other colleagues a dating platform based on similarities detected through each other's music taste. Our application received 2 awards: Best Valentine's Day Hack and Best Design (UI) in competition against 160+ other participants at Binghamton University’s HackBU 2022. "
+              "Collaborated with programming partner to build a full-stack application used to manage automobile sales and services. Users can enter automobile information, create salespersons or technicians, book servicing appointments, create sales records, view past sales records, and more.  "
             }
-            icon="/media/home/projects-spotability-icon.png"
+            icon="/media/home/projects-cartune-icon.png"
             tags={[
-              "React.js",
-              "Django",
-              "MongoDB",
-              "ChakraUI",
-              "Python3",
-              "Figma",
+              <List>
+                <ListItem>
+                <ListIcon as={IoLogoReact} color="cyan.300" ml={0} mr={1} mb={0.5}/>
+              React.js
+                </ListItem>
+              </List>,
+              <List>
+                <ListItem>
+                <ListIcon as={SiDjango} color="green.800" ml={0} mr={1} mb={0}/>
+              Django 4
+                </ListItem>
+              </List>,
+              <List>
+                <ListItem>
+                  <ListIcon as={IoLogoJavascript} color="yellow.400" ml={0} mr={1} mb={0.5}/>
+                  JavaScript ES6
+                </ListItem>
+              </List>,
+              <List>
+                <ListItem>
+                  <ListIcon as={IoLogoPython} color="blue.500" ml={0} mr={1} mb={0.5}/>
+                  Python 3
+                </ListItem>
+              </List>,
+              <List>
+                <ListItem>
+                <ListIcon as={SiBootstrap} color="purple.600" ml={0} mr={1} mb={0.5}/>
+              Bootstrap
+                </ListItem>
+              </List>,
+              <List>
+                <ListItem>
+                  <ListIcon as={SiPostgresql} color="blue.600" ml={0} mr={1} mb={0}/>
+                  PostgreSQL
+                </ListItem>
+              </List>,
+              <List>
+                <ListItem>
+                <ListIcon as={SiDocker} color="blue.300" ml={0} mr={1} mb={0.5}/>
+              Docker
+                </ListItem>
+              </List>
             ]}
-            gh_link={"https://github.com/xinwng/Spotability"}
+            gh_link={"https://gitlab.com/est-kim/CarTune"}
+            video="https://www.youtube.com/embed/X-VmpPVH-lA"
           ></ProjectCardItem>
 
           <ProjectCardItem
-            title="Explorify"
-            desc="Explorify aims to unleash the potential of Spotify's Recommendation API. Provided your favorite songs along with specific track attributes such as: tempo, valence, energy, popularity, and more - the application aims to recommend you other similar tracks."
-            icon="/media/home/projects-explorify-icon.png"
+            title="Conference GO"
+            desc="Developed and designed an application to manage conferences, locations, presentations, and attendees with user authentication, database integration, responsive design, built-in user system, and form handling using Python, Django, HTML, and CSS while implementing RESTful APIs. "
+            icon="/media/home/projects-confgo-icon.png"
             tags={[
-              "Express.js",
-              "React.js",
-              "AWS EC2",
-              "PM2",
-              "Nginx",
-              "CI/CD",
+              <List>
+                <ListItem>
+                <ListIcon as={IoLogoReact} color="cyan.300" ml={0} mr={1} mb={0.5}/>
+              React.js
+                </ListItem>
+              </List>,
+              <List>
+                <ListItem>
+                <ListIcon as={SiDjango} color="green.800" ml={0} mr={1} mb={0}/>
+              Django 4
+                </ListItem>
+              </List>,
+              <List>
+                <ListItem>
+                  <ListIcon as={IoLogoJavascript} color="yellow.400" ml={0} mr={1} mb={0.5}/>
+                  JavaScript ES6
+                </ListItem>
+              </List>,
+              <List>
+                <ListItem>
+                  <ListIcon as={IoLogoPython} color="blue.500" ml={0} mr={1} mb={0.5}/>
+                  Python 3
+                </ListItem>
+              </List>,
+              <List>
+                <ListItem>
+                <ListIcon as={SiBootstrap} color="purple.600" ml={0} mr={1} mb={0.5}/>
+              Bootstrap
+                </ListItem>
+              </List>,
+              <List>
+                <ListItem>
+                <ListIcon as={IoLogoHtml5} color="red.500" ml={0} mr={1} mb={0.5}/>
+              HTML5
+                </ListItem>
+              </List>,
+              <List>
+                <ListItem>
+                <ListIcon as={IoLogoCss3} color="blue.600" ml={0} mr={1} mb={0.5}/>
+              CSS
+                </ListItem>
+              </List>,
+              <List>
+                <ListItem>
+                <ListIcon as={SiDocker} color="blue.300" ml={0} mr={1} mb={0.5}/>
+              Docker
+                </ListItem>
+              </List>
             ]}
-            gh_link={"https://github.com/xinwng/explorify"}
+            gh_link={"https://gitlab.com/est-kim/conference-go-2"}
+            video="https://www.youtube.com/embed/L0ChSs9DdTQ"
           ></ProjectCardItem>
         </Stack>
 

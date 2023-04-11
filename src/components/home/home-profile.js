@@ -27,7 +27,22 @@ export default function HomeProfile() {
     <Stack>
       <Flex direction={isMinWidth ? "row" : "column"} mt={isMinWidth ? 15 : 0}>
         <Image
-          src="/media/home/pfp-mobile.svg"
+          src={
+            colorMode === "dark"
+            ? "/media/home/girldarkmode.svg"
+            : "/media/home/girllightmode.svg"
+          }
+          alt="Profile Picture"
+          borderRadius="full"
+          backgroundColor="transparent"
+          boxShadow="none"
+          width="200px"
+          height="160px"
+          mt="3"
+          display={isMinWidth ? "none" : "block"}
+        />
+        {/* <Image
+          src="/media/home/metransparent.svg"
           alt="Profile Picture"
           borderRadius="full"
           backgroundColor="transparent"
@@ -36,34 +51,37 @@ export default function HomeProfile() {
           height="160px"
           mt="3"
           display={isMinWidth ? "none" : "block"}
-        />
+        /> */}
 
         <Box my={isMinWidth ? 20 : 3}>
           <Heading fontSize="4xl" fontWeight="bold">
-            {"Xin Wang"}
+            {"Esther Kim"}
           </Heading>
-          {/* <Text my={1.5}>{"Incoming Software Engineer @ VMware"}</Text> */}
           <Text my={2} fontWeight={"500"} >
-            {"Software Engineer at VMware"}
+            {"Fullstack Software Engineer"}
           </Text>
           <Text my={1} fontWeight={"500"} >
-            {"Pod Team, Cloud Services ☁️"}
+            {"Striving to be 1% better every day"}
           </Text>
 
           <Text my={2} color={colorMode === "dark" ? "gray.300" : "gray.700"}>
-            {"San Francisco Bay Area"}
+            {"Irvine, California"}
           </Text>
         </Box>
 
         <Spacer />
         <Image
-          src="/media/home/pfp-desktop.svg"
+          src={
+            colorMode === "dark"
+            ? "/media/home/girldarkmode.svg"
+            : "/media/home/girllightmode.svg"
+          }
           alt="Profile Picture"
           backgroundColor="transparent"
           boxShadow="none"
-          height="385px"
-          mt="auto"
-          mx="auto"
+          height="285px"
+          mt="0px"
+          // mx="100px"
           display={isMinWidth ? "block" : "none"}
         />
       </Flex>

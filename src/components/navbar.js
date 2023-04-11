@@ -104,37 +104,6 @@ const NavBar = () => {
               </Button>
             </NextLink>
 
-            {/* <NextLink href="/projects" passHref>
-              <Button
-                variant={router.pathname === "/projects" ? "solid" : "ghost"}
-                // color={router.pathname === '/' ? useColorModeValue("none", "none") : useColorModeValue("#000000", "#ffffff")}
-                fontWeight={router.pathname === "/projects" ? "bold" : "normal"}
-                // fontWeight="bold"
-                fontSize="15px"
-                to="/projects"
-              >
-                {router.pathname === "/projects" ? (
-                  <u>Projects</u>
-                ) : (
-                  <Text>Projects</Text>
-                )}
-              </Button>
-            </NextLink> */}
-
-            {/* <NextLink href="https://www.github.com/xinwng" passHref>
-              <Button
-                as="a"
-                target="_blank"
-                fontWeight="bold"
-                fontSize="14px"
-                variant="ghost"
-              >
-                GitHub
-              </Button>
-            </NextLink> */}
-
-            {/* <NextLink href="/Xin_Wang_Resume.pdf" passHref> */}
-
             <NextLink href="/about-me" passHref>
               <Button
               mx={1}
@@ -191,10 +160,8 @@ const NavBar = () => {
             </NextLink>
 
             <NextLink
-              // href={
-              //   "https://docs.google.com/document/d/1NMOKPUj2bnOsEr9lHlQVk1gquY1f___lRJTzfnOANn0/edit?usp=sharing"
-              // }
-              href={"/media/about-me/Xin_Wang_Resume.pdf"}
+
+              href={"/media/about-me/EstherKimResume.pdf"}
               passHref
             >
               <Button
@@ -202,16 +169,16 @@ const NavBar = () => {
                 as="a"
                 target="_blank"
                 variant={
-                  router.pathname === "/Xin_Wang_Resume.pdf" ? "solid" : "ghost"
+                  router.pathname === "/EstherKimResume.pdf" ? "solid" : "ghost"
                 }
 
                 // color={router.pathname === './resume' ? useColorModeValue("blue.500", "blue.700") : useColorModeValue("#000000", "#ffffff")}
                 // fontWeight={
-                // router.pathname === "/Xin_Wang_Resume.pdf" ? "bold" : "normal"
+                // router.pathname === "/EstherKimResume.pdf" ? "bold" : "normal"
                 // }
                 fontWeight="normal"
                 fontSize="15px"
-                to="https://docs.google.com/document/d/1NMOKPUj2bnOsEr9lHlQVk1gquY1f___lRJTzfnOANn0/edit?usp=sharing"
+                
               >
                 Resume
               </Button>

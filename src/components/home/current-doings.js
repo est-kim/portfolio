@@ -24,52 +24,25 @@ export default function CurrentDoings() {
         <ListItem>
           <Box textAlign="left" my={1}>
             <Text>
-              <strong>{"Software Engineer at "}</strong>
-              <TextLink
-                link="https://www.vmware.com/"
-                name="VMware"
-                // icon={<ExternalLinkIcon />}
-              ></TextLink>
+              <strong>{"Software Engineer working on Personal Projects"}</strong>
               {
-                " - VMware Cloud (VMC) Pod Team, Cloud Infrastructure Business Group (CIBG). Throughout my time here, my objective is to further enable software-defined data center as a service (SDDCaaS)."
+                " - Currently brainstorming a new application. Stay tuned! "
               }
             </Text>
           </Box>
         </ListItem>
 
-        {/* <Divider my={1.5} /> */}
-        {/* <ListItem>
-          <Box textAlign="left" my={1}>
-            <Text>
-              <strong>{"Incoming Software Engineer"}</strong>
-              {" @ "}
-              <TextLink
-                link="https://www.vmware.com/company.html"
-                name="VMware"
-                icon={<ExternalLinkIcon />}
-              ></TextLink>
-            </Text>
-          </Box>
-        </ListItem> */}
-
-        {/* <Divider my={1.5} /> */}
         <ListItem>
           <Box textAlign="left" my={1}>
             <Text>
-              <strong>{"Content Developer at "}</strong>
-              <TextLink
-                link="https://www.zybooks.com/about-us/"
-                name="zyBooks"
-                // icon={<ExternalLinkIcon />}
-              ></TextLink>
+              <strong>{"Currently improving my skills in"}</strong>
               {
-                " - where I review, evaluate, and ensure quality of learning materials including questions, solutions, modules, activities, and other integrated tools."
+                " - React.js, AWS, Data Structures, and Algorithms"
               }
             </Text>
           </Box>
         </ListItem>
 
-        {/* <Divider my={1.5} /> */}
       </UnorderedList>
 
 

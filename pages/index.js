@@ -30,7 +30,7 @@ export default function Home() {
       <Box w="100%" mt={isMinWidth ? "-4rem" : "0rem"} mb="3rem">
         <Stack >
           <Box >
-            <Heading fontSize="3xl" fontWeight="bold" my={1} >
+            <Heading fontSize="3xl" fontWeight="bold" my={1} mt={2}>
               Bio
             </Heading>
           </Box>

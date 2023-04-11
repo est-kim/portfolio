@@ -44,7 +44,7 @@ export default function Bio() {
           <Box textAlign="left">
             <Text>
               {
-                "Hi! I'm Xin (pronounced like “Shin”) - I love to build great things with great people while having a great time. I enjoy learning, expanding my arsenal of toolsets, and using my knowledge and capabilities to aid and impact others!"
+                "Hi! I'm Esther - a software engineer with a passion for creating visually appealing websites that leave a lasting positive impression on users. I enjoy exploring new technologies to upgrade my skillset and enhance my abilities. My constant pursuit of self-improvement has fueled my drive to consistently strive for excellence, always pushing myself to achieve even the slightest bit of progress each day. Most importantly, I take pride in leveraging my expertise to assist and make a meaningful impact on others."
               }
             </Text>
           </Box>
@@ -52,12 +52,12 @@ export default function Bio() {
           <Box textAlign="left">
             <Text>
               {
-                "Outside of work, I enjoy spending time with my friends, traveling, city-exploring, discovering music, and snowboarding (which I recently picked up)! If you want to chat, you can always reach out to me at "
+                "In my free time, I enjoy spending time with friends, trying new restaurants, traveling, playing pickleball, and going to music festivals! If you'd like to chat, you can reach me at "
               }
               <u>
                 <TextLink2
-                  link="mailto: xin@xinw.org"
-                  name="xin@xinw.org"
+                  link="mailto: estherkimdev@gmail.com"
+                  name="estherkimdev@gmail.com"
                   icon={<ExternalLinkIcon />}
                 ></TextLink2>
               </u>
@@ -65,11 +65,6 @@ export default function Bio() {
             </Text>
           </Box>
         </VStack>
-
-        {/* <Center>
-        <SocialMediaIcons/>
-      </Center> */}
-
 
       </Stack>
     </Flex>

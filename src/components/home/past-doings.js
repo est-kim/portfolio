@@ -24,39 +24,20 @@ export default function PastDoings() {
       </Box>
 
       <UnorderedList>
-        {/* <ListItem>
-          <Box textAlign="left" my={1}>
-            <Text>
-              <strong>{"Campus Ambassador"}</strong>
-              {" @ "}
-              <TextLink
-                link="https://simplify.jobs/"
-                name="Simplify"
-                icon={<ExternalLinkIcon />}
-              ></TextLink>
-            </Text>
-          </Box>
-        </ListItem> */}
 
         {/* <Divider my={1.5} /> */}
         <ListItem>
           <Box textAlign="left" my={1}>
             <Text>
-              <strong>{"Best Valentine's Day Hack & Best Design (UI)"}</strong>
-              {" out of 160+ participants at "}
+              <strong>{"Fullstack Software Engineering Bootcamp Graduate"}</strong>
+              {" from "}
               <TextLink
-                link="https://hackbu.org"
-                name="HackBU 2022"
-                // icon={<ExternalLinkIcon />}
-              ></TextLink>
-              {" for creating "}
-              <TextLink
-                link="https://github.com/xinwng/HACKBU2022"
-                name="Spotability"
+                link="https://www.hackreactor.com/"
+                name="Hack Reactor"
                 // icon={<ExternalLinkIcon />}
               ></TextLink>
               {
-                " - an app that attempts to discover and match couples based on each other's music taste, using technologies including React.js, Python, Django, MongoDB."
+                ", an intensive 19-week full-time coding bootcamp with over 1000 hours spent learning Python, JavaScript, React, Docker, Git, Django, FastAPI, and state-of-the-art practices such as microservices, CI/CD, network security, and domain-driven design."
               }
             </Text>
           </Box>
@@ -66,15 +47,11 @@ export default function PastDoings() {
         <ListItem>
           <Box textAlign="left" my={1}>
             <Text>
-              <strong>Invited Contestant for</strong> {""}{" "}
-              <strong>{"JP Morgan Chase & Co.'s"}</strong>{" "}
-              <TextLink
-                link="https://careers.jpmorgan.com/us/en/students/programs/code-for-good"
-                name="Code for Good"
-                // icon={<ExternalLinkIcon />}
-              ></TextLink>
+              <strong>Purchasing & Exporting Agent</strong> {""}{" "}
+              {" for "}
+              <strong>{"Pantree Enterprises"}</strong>{" "}
               {
-                " - where me and 3 other colleagues created a full-stack application utilizing: Flask, React.js, and SQLite to iterate, develop, and provide an interface for non-profit organization, GLSEN. Our goal was to source bullying and harassment policies across education agencies nationwide."
+                " - while concurrently self studying web development, I worked as a Purchasing and Exporting Agent to further develop valuable soft skills such as problem solving, as I was responsible for sourcing and purchasing goods and materials for customers by finding the best solutions for each customer's needs. My experience liaising with manufacturers, coordinating with external customers, and managing relationships with key suppliers strengthened my communication skills. This experience also required a high level of organization as I was responsible for authorizing payments, maintaining receipts, records, inventories, and creating various documents such as quotations, purchase orders, commercial invoices, and packing lists."
               }
             </Text>
           </Box>
@@ -84,14 +61,10 @@ export default function PastDoings() {
         <ListItem>
           <Box textAlign="left" my={1}>
             <Text>
-              <strong>{"Software Engineer Intern at "}</strong>
-              <TextLink
-                link="https://vistendo.com/"
-                name="Vistendo"
-                // icon={<ExternalLinkIcon />}
-              ></TextLink>
+              <strong>{"Founder of Pibu"}</strong>
+
               {
-                " - a very valuable experience where I received guidance and mentorship learning and practicing full-stack development. This experience allowed me to prosper an expertise in React.js, provided me with exposure in utilizing various AWS solutions, and also led me to grasp intricate knowledge of SFTP & SCP protocols. Combining all of this new information in conjunction to the innovative tech stack allowed me to aid Vistendo further along their PWA development progress."
+                " - founding and launching my own e-commerce skincare product platform was the pivotal moment in what deepened and solidified my passion for software engineering. As I had built almost every aspect of the business from scratch, the technical skill to code my own website was the one skill I yearned to be able to do myself one day. It was through building my own online business that I found myself fully immersed and amazed by the complexity and possibilities of what a website and business entails which drove me to fully commit to becoming a great software engineer."
               }
             </Text>
           </Box>
@@ -101,14 +74,31 @@ export default function PastDoings() {
         <ListItem>
           <Box textAlign="left" my={1}>
             <Text>
-              <strong>{"Computer Scientist & Subteam Co-Lead at "}</strong>
+              <strong>{"Microsoft Dynamics 365/CRM Recruitment Consultant"}</strong>
+              {" at "}
               <TextLink
-                link="https://www.lspace.asu.edu/"
-                name="NASA L'Space MCA"
+                link="https://www.nigelfrank.com/"
+                name="Nigel Frank International"
                 // icon={<ExternalLinkIcon />}
               />
               {
-                " taught me the importance of management, teamwork, and leadership. This experience was when I researched and designed a payload system with a team while leading a sub-group of students. Our mission goal was to explore the Venusian atmosphere and scientifically ideate a system that would survive such environment while abiding by a $250 million budget constraint."
+                " - specialized in the recruitment and delivery of Microsoft Dynamics CRM and AWS Security professionals throughout California. This experience taught me how to understand the technical skills and requirements needed for different positions as I sourced and qualified 20+ candidates weekly through the use of job marketing campaigns, ATS, referrals, and online platforms such as LinkedIn, Dice, Monster, GitHub, AdCourier, and BroadBean. This position required a high level of attention to detail, as I was responsible for reviewing resumes, job applications, and screening candidates. "
+              }
+            </Text>
+          </Box>
+        </ListItem>
+        <ListItem>
+          <Box textAlign="left" my={1}>
+            <Text>
+              <strong>{"Head Server/Assistant Manager"}</strong>
+              {" at "}
+              <TextLink
+                link="https://www.yelp.com/biz/house-of-shabu-shabu-irvine"
+                name="House of Shabu Shabu"
+                // icon={<ExternalLinkIcon />}
+              />
+              {
+                " - while taking Computer Science courses at Irvine Valley College, I concurrently served as the head server and assistant manager, an experience that significantly fortified my interpersonal skills and abilities. I was promoted from server to lead server within the first month based on exemplary job performance and work ethic. I am also proud of receiving the highest number of 5-star Yelp reviews with my name during my time there."
               }
             </Text>
           </Box>

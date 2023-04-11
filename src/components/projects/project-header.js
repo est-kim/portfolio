@@ -1,4 +1,4 @@
-import { Box, Heading, Image, Stack, useMediaQuery } from "@chakra-ui/react";
+import { Box, Heading, Image, Stack, useMediaQuery, useColorMode } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 // import TypeWriter from "../typewriter";
 import ProjectList from "./projects";
@@ -6,6 +6,7 @@ import ProjectList from "./projects";
 export default function ProjectHeader() {
   const [desktopQuery] = useMediaQuery("(min-width: 700px)");
   const [isMinWidth, setIsMinWidth] = useState(false);
+  const { colorMode } = useColorMode();
 
   useEffect(() => {
     if (desktopQuery !== isMinWidth) {
@@ -18,22 +19,30 @@ export default function ProjectHeader() {
       <Stack mt={isMinWidth ? 15 : 0}>
         <Box align={"center"}>
           <Image
-            src="/media/projects/project-header-img.svg"
+            src={
+              colorMode === "dark"
+                ? "/media/projects/corgiwhitetransparent.svg"
+                : "/media/projects/corgiblacktransparent.svg"
+            }
             alt="Project Header Picture"
             backgroundColor="transparent"
             boxShadow="none"
-            height="300px"
+            height="100px"
             mt="0"
             display={isMinWidth ? "none" : "block"}
           />
         </Box>
         <Box>
           <Image
-            src="/media/projects/project-header-img.svg"
+            src={
+              colorMode === "dark"
+                ? "/media/projects/corgiwhitetransparent.svg"
+                : "/media/projects/corgiblacktransparent.svg"
+            }
             alt="Profile Picture"
             backgroundColor="transparent"
             boxShadow="none"
-            height="385px"
+            height="185px"
             mt="-5"
             mx="auto"
             display={isMinWidth ? "block" : "none"}
@@ -42,7 +51,7 @@ export default function ProjectHeader() {
 
         <Box my={isMinWidth ? 10 : 3}>
           <Heading my={"2"} fontSize="3xl" fontWeight="bold">
-            {"Featured projects"}
+            {"Featured Projects"}
           </Heading>
         </Box>
       </Stack>

@@ -30,8 +30,8 @@ export default function AboutMeHeader() {
         <Image
           src={
             colorMode === "dark"
-              ? "/media/about-me/pfp-night-mode.svg"
-              : "/media/about-me/pfp-facing-right.svg"
+            ? "/media/home/girldarkmode.svg"
+            : "/media/home/girllightmode.svg"
           }
           alt="Cartoon Picture Happy"
           borderRadius="full"
@@ -46,8 +46,8 @@ export default function AboutMeHeader() {
         <Image
           src={
             colorMode === "dark"
-              ? "/media/about-me/pfp-night-mode.svg"
-              : "/media/about-me/pfp-facing-right.svg"
+            ? "/media/home/girldarkmode.svg"
+            : "/media/home/girllightmode.svg"
           }
           alt="Cartoon Picture Happy"
           backgroundColor="transparent"

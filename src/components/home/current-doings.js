@@ -2,7 +2,6 @@ import {
   Box, Flex, ListItem, Text, UnorderedList, useMediaQuery
 } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
-import TextLink from "./text-link";
 
 export default function CurrentDoings() {
   const [desktopQuery] = useMediaQuery("(min-width: 700px)");

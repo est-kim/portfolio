@@ -1,10 +1,10 @@
-import { Box, Heading, Image, Stack, useMediaQuery, useColorMode } from "@chakra-ui/react";
+import { Box, Heading, Stack, useMediaQuery} from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import PastDoings from "../home/past-doings";
 import CurrentDoings from "../home/current-doings";
 
 export default function JourneyHeader() {
-  const { colorMode } = useColorMode();
+  // const { colorMode } = useColorMode();
   const [desktopQuery] = useMediaQuery("(min-width: 700px)");
   const [isMinWidth, setIsMinWidth] = useState(false);
 

@@ -1,6 +1,5 @@
 import { Box, Heading, Image, Stack, useMediaQuery, useColorMode } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
-// import TypeWriter from "../typewriter";
 import ProjectList from "./projects";
 
 export default function ProjectHeader() {

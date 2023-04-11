@@ -5,13 +5,11 @@ import { Heading,
   Text,
   UnorderedList,
   ListItem,
-  Button,
   ListIcon
 } from "@chakra-ui/react";
 import React, { useState, useEffect } from "react";
 import { IoLogoJavascript, IoLogoPython, IoLogoHtml5, IoLogoCss3, IoLogoReact } from "react-icons/io5";
 import { SiDjango, SiFastapi, SiRabbitmq, SiPostgresql, SiMongodb, SiDocker } from "react-icons/si";
-import TextLink from "/src/components/home/text-link";
 import NextLink from "next/link";
 
 

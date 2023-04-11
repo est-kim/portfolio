@@ -9,7 +9,7 @@ import {
   List
 } from "@chakra-ui/react";
 import { IoLogoJavascript, IoLogoPython, IoLogoHtml5, IoLogoCss3, IoLogoReact, IoInfinite } from "react-icons/io5";
-import { SiDjango, SiFastapi, SiRabbitmq, SiPostgresql, SiMongodb, SiDocker, SiBootstrap,
+import { SiDjango, SiFastapi, SiPostgresql, SiDocker, SiBootstrap,
   SiAmazons3 } from "react-icons/si";
 import { useEffect, useState } from "react";
 import ProjectCardItem from "../projects/project-card-template";
@@ -45,49 +45,49 @@ export default function HomeProjects() {
             }
             icon="/media/home/projects-facebark-icon.png"
             tags={[
-              <List>
+              <List key={1}>
                 <ListItem>
                 <ListIcon as={IoLogoReact} color="cyan.300" ml={0} mr={1} mb={0.5}/>
               React.js
                 </ListItem>
               </List>,
-              <List>
+              <List key={2}>
                 <ListItem>
                 <ListIcon as={SiBootstrap} color="purple.600" ml={0} mr={1} mb={0.5}/>
               Bootstrap
                 </ListItem>
               </List>,
-              <List>
+              <List key={3}>
                 <ListItem>
                   <ListIcon as={IoLogoJavascript} color="yellow.400" ml={0} mr={1} mb={0.5}/>
                   JavaScript ES6
                 </ListItem>
               </List>,
-              <List>
+              <List key={4}>
                 <ListItem>
                   <ListIcon as={IoLogoPython} color="blue.500" ml={0} mr={1} mb={0.5}/>
                   Python 3
                 </ListItem>
               </List>,
-              <List>
+              <List key={5}>
                 <ListItem>
                   <ListIcon as={SiFastapi} color="teal.500" ml={0} mr={1} mb={0.5}/>
                   FastAPI
                 </ListItem>
               </List>,
-              <List>
+              <List key={6}>
                 <ListItem>
                   <ListIcon as={SiPostgresql} color="blue.600" ml={0} mr={1} mb={0}/>
                   PostgreSQL
                 </ListItem>
               </List>,
-              <List>
+              <List key={7}>
                 <ListItem>
                   <ListIcon as={SiAmazons3} color="red.400" ml={0} mr={1} mb={0.5}/>
                   Amazon S3
                 </ListItem>
               </List>,
-              <List>
+              <List key={8}>
                 <ListItem>
                   <ListIcon as={IoInfinite} color="blue.700" ml={0} mr={1} mb={0.5}/>
                   CI/CD
@@ -105,43 +105,43 @@ export default function HomeProjects() {
             }
             icon="/media/home/projects-cartune-icon.png"
             tags={[
-              <List>
+              <List key={9}>
                 <ListItem>
                 <ListIcon as={IoLogoReact} color="cyan.300" ml={0} mr={1} mb={0.5}/>
               React.js
                 </ListItem>
               </List>,
-              <List>
+              <List key={10}>
                 <ListItem>
                 <ListIcon as={SiDjango} color="green.800" ml={0} mr={1} mb={0}/>
               Django 4
                 </ListItem>
               </List>,
-              <List>
+              <List key={11}>
                 <ListItem>
                   <ListIcon as={IoLogoJavascript} color="yellow.400" ml={0} mr={1} mb={0.5}/>
                   JavaScript ES6
                 </ListItem>
               </List>,
-              <List>
+              <List key={12}>
                 <ListItem>
                   <ListIcon as={IoLogoPython} color="blue.500" ml={0} mr={1} mb={0.5}/>
                   Python 3
                 </ListItem>
               </List>,
-              <List>
+              <List key={13}>
                 <ListItem>
                 <ListIcon as={SiBootstrap} color="purple.600" ml={0} mr={1} mb={0.5}/>
               Bootstrap
                 </ListItem>
               </List>,
-              <List>
+              <List key={14}>
                 <ListItem>
                   <ListIcon as={SiPostgresql} color="blue.600" ml={0} mr={1} mb={0}/>
                   PostgreSQL
                 </ListItem>
               </List>,
-              <List>
+              <List key={15}>
                 <ListItem>
                 <ListIcon as={SiDocker} color="blue.300" ml={0} mr={1} mb={0.5}/>
               Docker
@@ -157,49 +157,49 @@ export default function HomeProjects() {
             desc="Developed and designed an application to manage conferences, locations, presentations, and attendees with user authentication, database integration, responsive design, built-in user system, and form handling using Python, Django, HTML, and CSS while implementing RESTful APIs. "
             icon="/media/home/projects-confgo-icon.png"
             tags={[
-              <List>
+              <List key={16}>
                 <ListItem>
                 <ListIcon as={IoLogoReact} color="cyan.300" ml={0} mr={1} mb={0.5}/>
               React.js
                 </ListItem>
               </List>,
-              <List>
+              <List key={17}>
                 <ListItem>
                 <ListIcon as={SiDjango} color="green.800" ml={0} mr={1} mb={0}/>
               Django 4
                 </ListItem>
               </List>,
-              <List>
+              <List key={18}>
                 <ListItem>
                   <ListIcon as={IoLogoJavascript} color="yellow.400" ml={0} mr={1} mb={0.5}/>
                   JavaScript ES6
                 </ListItem>
               </List>,
-              <List>
+              <List key={19}>
                 <ListItem>
                   <ListIcon as={IoLogoPython} color="blue.500" ml={0} mr={1} mb={0.5}/>
                   Python 3
                 </ListItem>
               </List>,
-              <List>
+              <List key={20}>
                 <ListItem>
                 <ListIcon as={SiBootstrap} color="purple.600" ml={0} mr={1} mb={0.5}/>
               Bootstrap
                 </ListItem>
               </List>,
-              <List>
+              <List key={21}>
                 <ListItem>
                 <ListIcon as={IoLogoHtml5} color="red.500" ml={0} mr={1} mb={0.5}/>
               HTML5
                 </ListItem>
               </List>,
-              <List>
+              <List key={22}>
                 <ListItem>
                 <ListIcon as={IoLogoCss3} color="blue.600" ml={0} mr={1} mb={0.5}/>
               CSS
                 </ListItem>
               </List>,
-              <List>
+              <List key={23}>
                 <ListItem>
                 <ListIcon as={SiDocker} color="blue.300" ml={0} mr={1} mb={0.5}/>
               Docker

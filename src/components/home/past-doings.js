@@ -18,7 +18,7 @@ export default function PastDoings() {
     <Flex direction="column">
       <Box mb={3}>
         <Heading fontSize="3xl" fontWeight="bold">
-          {/* Past experiences 🚌 */}
+
           Previously...
         </Heading>
       </Box>

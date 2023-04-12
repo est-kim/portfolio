@@ -8,7 +8,7 @@ The project was built with [Next.js](https://nextjs.org), [Chakra UI](https://ch
 ### Build
 ```
 $ git clone https://github.com/est-kim/portfolio.git
-$ cd personal-portforlio
+$ cd portfolio
 $ npm install
 $ npm run dev
 # or yarn

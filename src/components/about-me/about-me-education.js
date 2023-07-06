@@ -106,6 +106,31 @@ export default function AboutMeEducation() {
         </UnorderedList>
       </Box>
 
+      <Box mt={3}>
+      <Text fontSize="1.1rem" fontWeight="bold">
+        <Text
+          textDecoration="underline"
+          style={{ display: "inline" }}
+        >
+          {"University of California, Davis"}
+        </Text>
+        {" - "}
+        <Text
+          fontSize="1.1rem"
+          fontWeight="normal"
+          textDecoration="none"
+          style={{ display: "inline" }}
+        >
+          {"Animal Science"}
+        </Text>
+      </Text>
+        <UnorderedList spacing={1} ml={3}>
+          <ListItem>
+            Bachelor of Science Degree in Animal Science
+          </ListItem>
+        </UnorderedList>
+      </Box>
+
       <Box my={4}>
         <Heading fontSize="3xl" fontWeight="bold">
           {"Certifications"}

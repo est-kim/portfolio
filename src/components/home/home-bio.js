@@ -1,6 +1,13 @@
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import {
-  Box, Flex, IconButton, Stack, Text, useColorMode, useMediaQuery, VStack
+  Box,
+  Flex,
+  IconButton,
+  Stack,
+  Text,
+  useColorMode,
+  useMediaQuery,
+  VStack,
 } from "@chakra-ui/react";
 import NextLink from "next/link";
 import React, { useEffect, useState } from "react";
@@ -52,7 +59,7 @@ export default function Bio() {
           <Box textAlign="left">
             <Text>
               {
-                "In my free time, I enjoy spending time with friends, trying new restaurants, traveling, playing pickleball, and going to music festivals! If you'd like to chat, you can reach me at "
+                "In my free time, I enjoy trying new restaurants, spending time with friends, traveling, playing pickleball, and going to music festivals! If you'd like to chat, you can reach me at "
               }
               <u>
                 <TextLink2
@@ -65,7 +72,6 @@ export default function Bio() {
             </Text>
           </Box>
         </VStack>
-
       </Stack>
     </Flex>
   );

@@ -44,7 +44,7 @@ export default function PastDoings() {
         </ListItem>
 
         {/* <Divider my={1.5} /> */}
-        <ListItem>
+        {/* <ListItem>
           <Box textAlign="left" my={1}>
             <Text>
               <strong>Purchasing & Exporting Agent</strong> {""}{" "}
@@ -55,7 +55,7 @@ export default function PastDoings() {
               }
             </Text>
           </Box>
-        </ListItem>
+        </ListItem> */}
 
         {/* <Divider my={1.5} /> */}
         <ListItem>
@@ -87,7 +87,7 @@ export default function PastDoings() {
             </Text>
           </Box>
         </ListItem>
-        <ListItem>
+        {/* <ListItem>
           <Box textAlign="left" my={1}>
             <Text>
               <strong>{"Head Server/Assistant Manager"}</strong>
@@ -102,7 +102,7 @@ export default function PastDoings() {
               }
             </Text>
           </Box>
-        </ListItem>
+        </ListItem> */}
 
         {/* <Divider my={1.5} /> */}
       </UnorderedList>

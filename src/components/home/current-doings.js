@@ -1,5 +1,10 @@
 import {
-  Box, Flex, ListItem, Text, UnorderedList, useMediaQuery
+  Box,
+  Flex,
+  ListItem,
+  Text,
+  UnorderedList,
+  useMediaQuery,
 } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 
@@ -15,17 +20,15 @@ export default function CurrentDoings() {
 
   return (
     <Flex direction="column">
-      <Box mt={0} mb={3}>
-
-      </Box>
+      <Box mt={0} mb={3}></Box>
 
       <UnorderedList>
         <ListItem>
           <Box textAlign="left" my={1}>
             <Text>
-              <strong>{"Software Engineer working on Personal Projects"}</strong>
+              <strong>{"Software Developer Intern at RadicalX"}</strong>
               {
-                " - Currently brainstorming a new application. Stay tuned! "
+                " - immersed in a broad array of projects, utilizing technologies like React, Stripe, Node.js, Material UI, and Firebase"
               }
             </Text>
           </Box>
@@ -35,16 +38,11 @@ export default function CurrentDoings() {
           <Box textAlign="left" my={1}>
             <Text>
               <strong>{"Currently improving my skills in"}</strong>
-              {
-                " - React.js, AWS, Data Structures, and Algorithms"
-              }
+              {" - React.js, JavaScript, Data Structures, and Algorithms"}
             </Text>
           </Box>
         </ListItem>
-
       </UnorderedList>
-
-
     </Flex>
   );
 }
